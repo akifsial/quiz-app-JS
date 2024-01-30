@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135.9deg, rgb(109, 25, 252) 16.4%, rgb(125, 31, 165) 56.1%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quiz-app{
+    background-color: white;
+    width: 50%;
+    padding: 30px 30px;
+}
+
+.quiz-app #programming-quiz-app{
+    font-size: 20px;
+    padding-bottom: 20px ;
+}
+
+#question{
+    font-size: 15px;
+    padding-top: 30px;
+}
+
+#answers button{
+    border: 2px solid rgba(0, 0, 0, 0.068);
+    padding: 8px 8px;
+    font-size: 15px;
+    margin-top: 15px;
+    transition:all 0.3s;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+#answers button:hover:not(:disabled){
+    background-color: black;
+    color: white;
+}
+
+#answers button:disabled{
+    cursor: no-drop;
+}
+
+.quiz-app>button{
+    float: right;
+    font-size: 15px;
+    padding: 8px 30px;
+    margin-top: 15px;
+    background-color: #781DC2;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.correct{
+    background-color: rgb(9, 189, 9);
+    color:white;
+}
+
+.incorrect{
+    background-color: rgb(212, 18, 18);
+    color:white;
+}
